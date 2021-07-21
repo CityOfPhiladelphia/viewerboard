@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^0.1.9",
-    "@phila/vue-datafetch": "1.4.3",
-    "@phila/vue-mapping": "2.2.9",
+    "@phila/vue-datafetch": "https://github.com/CityOfPhiladelphia/phila-vue-datafetch#de70a4bffa8a6b9346aae3aaaadd2c83382751a7",
+    "@phila/vue-mapping": "https://github.com/CityOfPhiladelphia/phila-vue-mapping#9e9636697700607c38d58c0ec02b89ff8876cd07",
     "core-js": "^3.6.1",
     "vue": "^2.6.11",
     "vue-router": "^3.0.6",
@@ -49,5 +49,8 @@
   "bugs": {
     "url": "https://github.com/CityOfPhiladelphia/viewerboard/issues"
   },
-  "homepage": "https://github.com/CityOfPhiladelphia/viewerboard#readme"
+  "homepage": "https://github.com/CityOfPhiladelphia/viewerboard#readme",
+  "engines": {
+    "yarn": "YARN NO LONGER USED - use npm instead."
+  }
 }
