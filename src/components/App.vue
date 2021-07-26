@@ -205,7 +205,7 @@
 
 <script>
 
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'maplibre-gl/dist/maplibre-gl.css';
 import destination from '@turf/destination';
 
 import PhilaHeader from './PhilaHeader.vue';

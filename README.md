@@ -11,6 +11,11 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.0 - 7/26/2021
+
+* uses @phila packages that use npm for package commands
+* requires using npm for all package commands
+
 ### 0.1.10 - 10/26/2020
 
 * fixes bug with pictometry
