@@ -159,33 +159,8 @@
                                      @full-marathon-button-clicked="this.fullMarathonButtonClicked"
                                      :position="'topright'"
             />
+            <!-- :halfOrFull="this.halfOrFull" -->
           </div>
-
-          <!-- <div v-once>
-            <div class="leaflet-bar easy-button-container twin-button"
-              :position="'topright'"
-            >
-              <button
-                @click="halfMarathonButtonClicked"
-                :class="ifHalfActive"
-              >
-                <span class="button-state state-unnamed-state unnamed-state-active">
-                  <img class="button-image" :src="'./images/half.png'">
-                </span>
-              </button>
-            </div>
-            <div class="leaflet-bar easy-button-container twin-button">
-              <button
-                @click="fullMarathonButtonClicked"
-                :class="ifFullActive"
-              >
-                <span class="button-state state-unnamed-state unnamed-state-active">
-                  <img class="button-image" :src="'./images/full.png'">
-                </span>
-              </button>
-            </div>
-          </div> -->
-
 
           <div v-once>
             <basemap-toggle-control v-if="shouldShowBasemapToggleControl"
@@ -419,6 +394,7 @@ export default {
       mbRootStyle: {
         'height': '100px',
       },
+      halfOrFull: 'full',
       mapToggleInitialActivation: null,
       imageryToggleInitialActivation: null,
       activeBasemap: 'pwd',
@@ -854,10 +830,12 @@ export default {
     halfMarathonButtonClicked() {
       // console.log('halfMarathonButtonClicked is running');
       this.activeTiledOverlays = ['halfMarathon'];
+      this.halfOrFull = 'half';
     },
     fullMarathonButtonClicked() {
       // console.log('fullMarathonButtonClicked is running');
       this.activeTiledOverlays = ['fullMarathon'];
+      this.halfOrFull = 'full';
     },
     handleBasemapToggleClick() {
       // console.log('handleBasemapToggleClick is running, this.activeBasemap:', this.activeBasemap);

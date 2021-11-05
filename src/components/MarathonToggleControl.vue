@@ -3,8 +3,7 @@
     <div v-if="mapType === 'leaflet'">
       <div class="leaflet-bar easy-button-container twin-button">
         <button
-          @click="$emit('half-marathon-button-clicked');"
-          @half-marathon-button-clicked="handleHalfButtonClick"
+          @click="$emit('half-marathon-button-clicked')"
           :class="ifHalfActive"
         >
           <span class="button-state state-unnamed-state unnamed-state-active">
@@ -14,8 +13,9 @@
         </button>
       </div>
       <div class="leaflet-bar easy-button-container twin-button">
-        <button @click="handleFullButtonClick"
-                :class="ifFullActive"
+        <button
+          @click="$emit('full-marathon-button-clicked')"
+          :class="ifFullActive"
         >
           <span class="button-state state-unnamed-state unnamed-state-active">
             <img class="button-image" :src="'./images/full.png'">
@@ -76,19 +76,25 @@
       MglButtonControl,
       MglControlContainer,
     },
-    props: [
-      'position',
-    ],
+    // props: [
+    //   'position',
+    //   'halfOrFull',
+    // ],
+    props: {
+      position: {
+        type: String,
+        default: null,
+      },
+      halfOrFull: {
+        type: String,
+        default: null,
+      },
+    },
     data() {
       const data = {
         // this will only affect the app size if the app is set to "plugin" mode
-        // mbRootStyle: {
-        //   'height': '100px',
-        // },
-        // mapToggleInitialActivation: null,
-        // imageryToggleInitialActivation: null,
-        activeVersion: 'full',
-        // activeTiledOverlays: [],
+        // activeVersion: 'full',
+        activeVersion: null,
       };
       return data;
     },
@@ -101,7 +107,8 @@
       },
       ifHalfActive() {
         let isActive;
-        if (this.activeVersion === 'half') {
+        // if (this.activeVersion === 'half') {
+        if (this.halfOrFull === 'half') {
           isActive = 'active'
         } else {
           isActive = 'inactive'
@@ -110,7 +117,7 @@
       },
       ifFullActive() {
         let isActive;
-        if (this.activeVersion === 'full') {
+        if (this.halfOrFull === 'full') {
           isActive = 'active'
         } else {
           isActive = 'inactive'
