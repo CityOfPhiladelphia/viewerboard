@@ -489,6 +489,7 @@ export default {
     window.addEventListener('resize', this.handleWindowResize);
   },
   mounted() {
+    console.log('Viewerboard App.vue mounted');
     if (this.$config.initialTiledOverlays) {
       this.activeTiledOverlays = this.$config.initialTiledOverlays;
     }
