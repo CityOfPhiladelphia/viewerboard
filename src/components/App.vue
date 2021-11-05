@@ -831,13 +831,13 @@ export default {
       // console.log('halfMarathonButtonClicked is running');
       this.activeTiledOverlays = ['halfMarathon'];
       this.halfOrFull = 'half';
-      this.$store.map.invalidateSize();
+      // this.$store.map.map.invalidateSize();
     },
     fullMarathonButtonClicked() {
       // console.log('fullMarathonButtonClicked is running');
       this.activeTiledOverlays = ['fullMarathon'];
       this.halfOrFull = 'full';
-      this.$store.map.invalidateSize();
+      // this.$store.map.map.invalidateSize();
     },
     handleBasemapToggleClick() {
       // console.log('handleBasemapToggleClick is running, this.activeBasemap:', this.activeBasemap);
