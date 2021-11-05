@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div v-if="this.mapType === 'leaflet'">
+    <div v-if="mapType === 'leaflet'">
       <div class="leaflet-bar easy-button-container twin-button">
-        <button @click="this.handleHalfButtonClick"
-                :class="this.ifHalfActive"
+        <button @click="handleHalfButtonClick"
+                :class="ifHalfActive"
         >
           <span class="button-state state-unnamed-state unnamed-state-active">
             <img class="button-image" :src="'./images/half.png'">
@@ -12,8 +12,8 @@
         </button>
       </div>
       <div class="leaflet-bar easy-button-container twin-button">
-        <button @click="this.handleFullButtonClick"
-                :class="this.ifFullActive"
+        <button @click="handleFullButtonClick"
+                :class="ifFullActive"
         >
           <span class="button-state state-unnamed-state unnamed-state-active">
             <img class="button-image" :src="'./images/full.png'">
@@ -22,21 +22,21 @@
       </div>
     </div>
 
-    <div v-if="this.mapType === 'mapbox'">
+    <div v-if="mapType === 'mapbox'">
       <!-- <MglControlContainer
         position="top-right"
       > -->
         <MglButtonControl
           :buttonId="'buttonId-03'"
           :buttonText="'HALF'"
-          :buttonClass="'twin-button ' + this.ifHalfActive"
-          @click="this.handleHalfButtonClick"
+          :buttonClass="'twin-button ' + ifHalfActive"
+          @click="handleHalfButtonClick"
         />
         <MglButtonControl
           :buttonId="'buttonId-04'"
           :buttonText="'FULL'"
-          :buttonClass="'twin-button ' + this.ifFullActive"
-          @click="this.handleFullButtonClick"
+          :buttonClass="'twin-button ' + ifFullActive"
+          @click="handleFullButtonClick"
         />
       <!-- </MglControlContainer> -->
 
