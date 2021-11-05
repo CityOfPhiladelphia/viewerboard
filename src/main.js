@@ -25,6 +25,7 @@ if (process.env.VUE_APP_BASE_CONFIG_URL) {
 }
 
 function initVue(config) {
+  Vue.config.devtools = true
   // const baseConfigUrl = clientConfig.baseConfig;
   // make config accessible from each component via this.$config
   Vue.use(configMixin, config);
