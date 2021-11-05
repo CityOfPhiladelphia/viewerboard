@@ -121,11 +121,6 @@
     },
     // methods: Object.assign(methods, {
     methods: {
-      parentMounted(parent) {
-        console.log('MarathonToggleControl parentMounted is running');
-        const map = parent.$leafletElement;
-        map.addControl(this.$leafletElement);
-      },
       handleHalfButtonClick() {
         console.log('handleHalfButtonClick is running, this:', this);
         this.activeVersion = 'half';
