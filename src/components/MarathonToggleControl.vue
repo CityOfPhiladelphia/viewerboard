@@ -117,10 +117,9 @@
       },
     },
     mounted() {
-      console.log('the Viewerboard the MarathonToggleControl mounted is running');
+      console.log('Viewerboard MarathonToggleControl mounted is running');
     },
-    // methods: Object.assign(methods, {
-    methods: {
+    methods: Object.assign(methods, {
       handleHalfButtonClick() {
         console.log('handleHalfButtonClick is running, this:', this);
         this.activeVersion = 'half';
@@ -131,8 +130,7 @@
         this.activeVersion = 'full';
         this.$emit('full-marathon-button-clicked');
       },
-    }
-    // })
+    })
   };
 </script>
 
