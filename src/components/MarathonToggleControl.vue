@@ -116,6 +116,9 @@
         return isActive;
       },
     },
+    mounted() {
+      console.log('Viewerboard MarathonToggleControl mounted is running');
+    },
     methods: Object.assign(methods, {
       handleHalfButtonClick() {
         console.log('handleHalfButtonClick is running, this:', this);
