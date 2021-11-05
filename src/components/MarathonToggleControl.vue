@@ -4,9 +4,9 @@
       <div class="leaflet-bar easy-button-container twin-button">
         <button
           @click="$emit('half-marathon-button-clicked');"
+          @half-marathon-button-clicked="handleHalfButtonClick"
           :class="ifHalfActive"
         >
-        <!-- @click="handleHalfButtonClick" -->
           <span class="button-state state-unnamed-state unnamed-state-active">
             <img class="button-image" :src="'./images/half.png'">
             <!-- <img class="button-image" :src="'../src/assets/half.png'"> -->
