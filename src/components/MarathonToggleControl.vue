@@ -2,9 +2,11 @@
   <div>
     <div v-if="mapType === 'leaflet'">
       <div class="leaflet-bar easy-button-container twin-button">
-        <button @click="handleHalfButtonClick"
-                :class="ifHalfActive"
+        <button
+          @click="$emit('half-marathon-button-clicked');"
+          :class="ifHalfActive"
         >
+        <!-- @click="handleHalfButtonClick" -->
           <span class="button-state state-unnamed-state unnamed-state-active">
             <img class="button-image" :src="'./images/half.png'">
             <!-- <img class="button-image" :src="'../src/assets/half.png'"> -->

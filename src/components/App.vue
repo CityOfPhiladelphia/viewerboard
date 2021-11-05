@@ -161,6 +161,32 @@
             />
           </div>
 
+          <!-- <div v-once>
+            <div class="leaflet-bar easy-button-container twin-button"
+              :position="'topright'"
+            >
+              <button
+                @click="halfMarathonButtonClicked"
+                :class="ifHalfActive"
+              >
+                <span class="button-state state-unnamed-state unnamed-state-active">
+                  <img class="button-image" :src="'./images/half.png'">
+                </span>
+              </button>
+            </div>
+            <div class="leaflet-bar easy-button-container twin-button">
+              <button
+                @click="fullMarathonButtonClicked"
+                :class="ifFullActive"
+              >
+                <span class="button-state state-unnamed-state unnamed-state-active">
+                  <img class="button-image" :src="'./images/full.png'">
+                </span>
+              </button>
+            </div>
+          </div> -->
+
+
           <div v-once>
             <basemap-toggle-control v-if="shouldShowBasemapToggleControl"
                                     v-once
@@ -567,6 +593,24 @@ export default {
     },
   },
   computed: {
+    ifHalfActive() {
+      let isActive;
+      if (this.activeVersion === 'half') {
+        isActive = 'active'
+      } else {
+        isActive = 'inactive'
+      }
+      return isActive;
+    },
+    ifFullActive() {
+      let isActive;
+      if (this.activeVersion === 'full') {
+        isActive = 'active'
+      } else {
+        isActive = 'inactive'
+      }
+      return isActive;
+    },
     BasemapImageLink() {
       if (this.activeBasemap === 'pwd') {
         return 'images/imagery_small.png';
