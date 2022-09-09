@@ -11,6 +11,10 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.2 - 9/9/2022
+
+* ran package updates
+
 ### 1.0.1 - 2/1/2022
 
 * uses maplibre, upgrades to pvd 2.2.4 and pvm 3.1.1
