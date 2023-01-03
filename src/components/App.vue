@@ -414,6 +414,8 @@ export default {
       }
     }
 
+    this.$store.commit('setImagery', 'imagery2022');
+
     // if (this.mapType === 'mapbox') {
     //   let map = this.$store.map;
     //   console.log('App mounted, map:', map);
@@ -926,7 +928,7 @@ export default {
         // console.log('if is running');
         this.activeBasemap = this.$store.state.map.imagery;
         this.tiledLayers = ['imageryBasemapLabels']
-      } else if (this.activeBasemap === 'imagery2019') {
+      } else if (this.activeBasemap === 'imagery2022') {
         // console.log('else if is running');
         this.activeBasemap = this.$store.state.map.basemap;
         this.tiledLayers = ['cityBasemapLabels']

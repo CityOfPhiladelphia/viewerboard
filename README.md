@@ -11,6 +11,10 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.3 - 1/3/2023
+
+* uses 2022 imagery
+
 ### 1.0.2 - 9/9/2022
 
 * ran package updates
