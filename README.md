@@ -11,9 +11,13 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.5 - 2/8/2023
+
+* ran full package updates
+
 ### 1.0.4 - 2/7/2023
 
-* ran package updates
+* ran package updates, but not @phila package updates
 
 ### 1.0.3 - 1/3/2023
 
