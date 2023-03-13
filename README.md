@@ -11,6 +11,10 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.7 - 3/13/2023
+
+* fixes bug where camera icon disappears when map is fullscreen
+
 ### 1.0.6 - 3/13/2023
 
 * allows using cyclomedia 23.2

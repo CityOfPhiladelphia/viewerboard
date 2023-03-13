@@ -102,8 +102,8 @@
             @click="handleCyclomediaRecordingClick"
           />
 
+          <!-- v-if="!fullScreenMapEnabled" -->
           <MglGeojsonLayer
-            v-if="!fullScreenMapEnabled"
             :sourceId="'cameraPoint'"
             :source="geojsonCameraSource"
             :layerId="'cameraPoints'"
@@ -111,8 +111,8 @@
             :icon="sitePath + 'images/camera.png'"
           />
 
+          <!-- v-if="!fullScreenMapEnabled" -->
           <MglGeojsonLayer
-            v-if="!fullScreenMapEnabled"
             :sourceId="'viewcone'"
             :source="geojsonViewconeSource"
             :layerId="'viewcones'"
