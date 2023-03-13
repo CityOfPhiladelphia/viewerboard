@@ -88,9 +88,9 @@
           />
           <!-- :position="'topleft'" -->
 
+          <!-- v-if="!fullScreenMapEnabled" -->
           <MglCircleMarker
             v-for="recording in cyclomediaRecordings"
-            v-if="!fullScreenMapEnabled"
             :coordinates="[recording.lng, recording.lat]"
             :key="recording.imageId"
             :image-id="recording.imageId"
