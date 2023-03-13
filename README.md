@@ -11,6 +11,10 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.6 - 3/13/2023
+
+* allows using cyclomedia 23.2
+
 ### 1.0.5 - 2/8/2023
 
 * ran full package updates

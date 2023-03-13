@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^0.1.9",
-    "@phila/vue-datafetch": "2.2.10",
-    "@phila/vue-mapping": "3.1.11",
+    "@phila/vue-datafetch": "2.2.11",
+    "@phila/vue-mapping": "3.1.12",
     "core-js": "^3.25.1",
     "vue": "^2.7.10",
     "vue-router": "^3.6.5",
