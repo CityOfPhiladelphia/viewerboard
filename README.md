@@ -11,6 +11,10 @@ It is similar to [mapboard](https://github.com/CityOfPhiladelphia/mapboard), but
 
 ## Release Notes
 
+### 1.0.9 - 3/22/2023
+
+* uses @phila/vue-mapping 3.1.14 which uses maplibre 2.4.0
+
 ### 1.0.8 - 3/13/2023
 
 * fixes bug where circles for cyclomedia disappear when map is fullscreen
